@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/background_rombo.xml" value="0.356" />
+        <entry key="app/src/main/res/drawable/background_round.xml" value="0.357" />
+        <entry key="app/src/main/res/drawable/bc_orange.xml" value="0.356" />
+        <entry key="app/src/main/res/drawable/ic_baseline_keyboard_return_24.xml" value="0.1905" />
+        <entry key="app/src/main/res/drawable/ic_update.xml" value="0.1905" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.5" />
       </map>
     </option>

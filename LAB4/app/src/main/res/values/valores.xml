@@ -18,7 +18,12 @@
     <dimen name="margin_secondview">10</dimen>
     <dimen name="cerodp">0</dimen>
     <dimen name="size_name_restaurant">20dp</dimen>
-    <dimen name="margin_start_secondlinearview_nameofrest">20dp</dimen>
+    <dimen name="margin_start_nameofrest">20dp</dimen>
+    <dimen name="margin_top_nameofrest">20dp</dimen>
+    <dimen name="margin_bt_bottom_secondview">15dp</dimen>
+    <dimen name="padding_bt_h_secondview">50dp</dimen>
+    <dimen name="margin_image_v_secondview">20dp</dimen>
+    <dimen name="size_turn_signal">15dp</dimen>
 
 
 </resources>

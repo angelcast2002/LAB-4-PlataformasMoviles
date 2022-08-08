@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/color_fondo_main">
+    android:background="@color/color_fondo_main"
+    tools:ignore="MissingConstraints">
 
     <LinearLayout
         android:id="@+id/barra_top"
@@ -16,8 +17,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp">
+        tools:ignore="MissingConstraints">
 
 
         <ImageView
@@ -60,7 +60,8 @@
         app:layout_constraintEnd_toStartOf="@+id/vertical1"
         app:layout_constraintTop_toBottomOf="@id/guideline2"
         tools:ignore="MissingConstraints"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -90,33 +91,101 @@
         app:cornerRadius="@dimen/size_border_bottom_terminarjornada"
         />
 
-    <LinearLayout
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="@dimen/cerodp"
         android:layout_height="@dimen/cerodp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline0.5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/guideline0.25"
         android:layout_margin="@dimen/margin_secondview"
         android:background="@color/white"
-        >
+        app:layout_constraintBottom_toTopOf="@+id/guideline0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline0.25"
+        app:layout_constraintVertical_bias="1.0">
 
-        <TextView
-            android:layout_marginTop="@dimen/margin_start_secondlinearview_nameofrest"
-            android:layout_marginStart="@dimen/margin_start_secondlinearview_nameofrest"
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical1_in_seconview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_nameofrest"
+            android:layout_marginTop="@dimen/margin_top_nameofrest"
             android:text="@string/text_name_restaurant"
+            android:textColor="@color/black"
             android:textSize="@dimen/size_name_restaurant"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_nameofrest"
+            android:layout_marginTop="@dimen/margin_secondview"
+            android:text="@string/text_direccion_rest"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:text="12 Calle 3-28, Cdad. de Guatemala" />
+            android:layout_marginStart="@dimen/margin_start_nameofrest"
+            android:layout_marginTop="@dimen/margin_secondview"
+            android:text="@string/text_horario"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-    </LinearLayout>
+        <Button
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/vertical1_in_seconview"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/button_iniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bt_bottom_secondview"
+            android:paddingHorizontal="@dimen/padding_bt_h_secondview"
+            android:text="@string/text_bt_secondview_iniciar"
+            android:textAllCaps="false"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            />
+
+        <Button
+            android:id="@+id/button_detalles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bt_bottom_secondview"
+            android:paddingHorizontal="@dimen/padding_bt_h_secondview"
+            android:textColor="@android:color/holo_orange_dark"
+            android:background="@android:color/transparent"
+            android:text="@string/text_bt_secondview_detalles"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertical1_in_seconview" />
+
+        <ImageView
+            android:layout_width="@dimen/size_turn_signal"
+            android:layout_height="@dimen/size_turn_signal"
+            android:layout_margin="@dimen/margin_image_v_secondview"
+            android:background="@drawable/background_rombo"
+            android:rotationX="180"
+            android:rotationY="-180"
+
+            android:src="@drawable/ic_baseline_keyboard_return_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -146,7 +215,5 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.5" />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
