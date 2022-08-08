@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="text_linearl_margin_top">12.5dp</dimen>
-    <dimen name="margin_left_descargar">100dp</dimen>
+    <dimen name="text_linearl_margin_top">5dp</dimen>
+    <dimen name="margin_left_descargar">50dp</dimen>
     <dimen name="margin_left_actualizacion">25dp</dimen>
-    <dimen name="margin_top_icono">6dp</dimen>
+    <dimen name="margin_top_icono">9dp</dimen>
     <dimen name="margin_start_icono">15dp</dimen>
     <dimen name="size_icono">32dp</dimen>
     <dimen name="size_text_dia_cumpleanos">30dp</dimen>
