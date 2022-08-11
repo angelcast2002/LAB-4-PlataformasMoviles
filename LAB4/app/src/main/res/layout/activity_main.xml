@@ -21,7 +21,7 @@
 
 
         <ImageView
-
+            android:padding="@dimen/padding_icono1_actualizar"
             android:layout_width="@dimen/size_icono"
             android:layout_height="@dimen/size_icono"
             android:background="@drawable/background_round"
@@ -103,7 +103,8 @@
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dia_cumpleanos">
+        app:layout_constraintTop_toBottomOf="@+id/dia_cumpleanos"
+        android:elevation="@dimen/elevation_constraint2">
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/vertical1_in_seconview"

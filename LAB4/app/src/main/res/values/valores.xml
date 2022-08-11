@@ -28,5 +28,7 @@
     <dimen name="margin_lateral">15dp</dimen>
     <dimen name="heigth_constraint_second">180dp</dimen>
     <dimen name="margin_constraint_vertical">50dp</dimen>
+    <dimen name="padding_icono1_actualizar">5dp</dimen>
+    <dimen name="elevation_constraint2">2dp</dimen>
 
 </resources>
